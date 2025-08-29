@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
     <h1>
       <span>
         Hello, My name is <br>
-        <h1 class="typing">Malik Robinson</h1>
       </span>
     </h1>
+
+    <h1 class="typing">Malik Robinson</h1>
 
     <br>
 
