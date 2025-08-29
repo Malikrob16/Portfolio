@@ -1,0 +1,6 @@
+Things To Fix:
+
+
+Ideas:
+
+-- Instead of having entire #rectangle rotate change clip path so it gives the illusion of rotating when hovered.

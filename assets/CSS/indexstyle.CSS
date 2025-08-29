@@ -1,5 +1,13 @@
 :root {
+  --oilBlack: RGB(10, 10, 10);
+  --offWhite: RGB(246, 246, 246);
+  --lightgray: RGB(208, 208, 208);
+  --techGreen: RGB(67, 158, 51);
+  --hdr-gradient: radial-gradient(
+    farthest-corner circle in oklab,
+    RGB(246, 246, 246), RGB(67, 158, 51));
 
+  --bradius: 15px;
 }
 
 html {
@@ -24,7 +32,12 @@ p {
 }
 
 body {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--oilBlack);
+  color: var(--offWhite);
   font-family: Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -33,16 +46,160 @@ body {
   line-height: 1.65;
   padding: 0;
   margin: 0;
+  min-height: 100vh;
+  width: 100%;
 }
 
-h1 span,
-h2 span,
-h3 span{
-  font-size:4rem;
+@keyframes fadein {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+  padding: 0;
+  animation: fadein 1.5s ease-in 0.3s;
+}
+
+.header li {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.header li:hover {
+  color: var(--techGreen);
+  transition: color 0.5s ease-in-out;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.header-main > h1{
+  text-align: center;
+  font-size:3rem;
   font-style: bold;
   letter-spacing: 1.5rem;
+  margin: 3rem;
+  padding: 0;
+  animation: fadein 1.5s ease-in 0.5s;
+}
+
+.header-main .typing {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--offWhite); /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color: var(--techGreen);
+  animation: typing 2s steps(40, end) 2.5s,
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--offWhite); }
+}
+
+.header-main > h2{
+  font-size:2rem;
+  font-style: italic;
+  letter-spacing: 0.5rem;
   margin: 0;
   padding: 0;
-  background-color: red;
-  text-shadow: 2px 2px 5px blue;
+  animation: fadein 1.5s ease-in 0.7s;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  animation: fadein 1.5s ease-in 0.9s;
+}
+
+.projects ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 0.1rem;
+  padding: 0;
+}
+
+.rectangle-pair li {
+  display: grid;
+  place-items: center;
+  background-color: var(--lightgray);
+  color: var(--oilBlack);
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--bradius);
+}
+
+.rectangle-pair {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 1rem 0 1rem;
+  transition: transform 1s ease-in-out;
+}
+
+.rectangle-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+  background-color: var(--techGreen);
+  border-radius: var(--bradius);
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 2rem 0 2rem 0;
+  animation: fadein 1.5s ease-in 0.9s;
 }
