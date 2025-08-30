@@ -13,4 +13,6 @@ My portfolio will be more JavaScript focused.
 
 The purpose of this project is to display information about me along with my personal projects I have been working on.
 
+Live Demo deployed on github pages: https://malikrob16.github.io/Portfolio
+
 Author: Malik Robinson
