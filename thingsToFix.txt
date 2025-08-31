@@ -1,6 +1,18 @@
 Things To Fix:
 
+Header --
+-- Add before and after animations for items
+
+Body --
+-- Align each section container
+-- design and implement project display structures
+-- add skills section inside education container below
+
+Footer --
+
 
 Ideas:
 
--- Instead of having entire #rectangle rotate change clip path so it gives the illusion of rotating when hovered.
+-- Animation for hovering each of the statements below introduction name
+
+-- Have a way for visitor to email me directly from portfolio page (Get inspiration from Angela J. Holden)
