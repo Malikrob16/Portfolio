@@ -1,4 +1,6 @@
 :root {
+  
+  /*COLORS*/
   --oilBlack: RGB(10, 10, 10);
   --offWhite: RGB(246, 246, 246);
   --lightgray: RGB(208, 208, 208);
@@ -7,6 +9,7 @@
     farthest-corner circle in oklab,
     RGB(246, 246, 246), RGB(67, 158, 51));
 
+  /*BORDER RADIUS*/
   --bradius: 15px;
 }
 
@@ -51,12 +54,12 @@ body {
 }
 
 @keyframes fadein {
-  0% {
-    transform: translateX(-30px);
+  from {
+    transform: translateX(-100px);
     opacity: 0;
   }
 
-  100% {
+  to{
     transform: translateX(0);
     opacity: 1;
   }
@@ -101,7 +104,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .header-main > h1{
@@ -115,13 +118,14 @@ body {
 }
 
 .header-main .typing {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--offWhite); /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  font-size: 8rem;
+  overflow: hidden; 
+  border-right: .15em solid var(--offWhite);
+  white-space: nowrap;
+  margin: 0 auto;
   letter-spacing: .15em;
   color: var(--techGreen);
-  animation: typing 2s steps(40, end) 2.5s,
+  animation: typing 2s steps(50, end) 2.5s,
   blink-caret .75s step-end infinite;
 }
 
@@ -144,12 +148,49 @@ body {
   animation: fadein 1.5s ease-in 0.7s;
 }
 
+.education {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  margin: 1rem 0 1rem 0;
+  animation: fadein 1.5s ease-in 1.1s;
+}
+
+.education span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  text-decoration: underline;
+  width: 10%;
+  height: 100%;
+  font-size: 3rem;
+  color: var(--techGreen);
+}
+
+.education-info {
+  width: 70%;
+  height: 100%;
+}
+
 .projects {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  margin: 1rem 0 1rem 0;
   animation: fadein 1.5s ease-in 0.9s;
+}
+
+.projects h2 span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  text-decoration: underline;
+  width: 10%;
+  height: 100%;
+  font-size: 3rem;
+  color: var(--techGreen);
 }
 
 .projects ul {
@@ -157,14 +198,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 70%;
+  height: 100%;
   gap: 0.1rem;
   padding: 0;
 }
 
 .rectangle-pair li {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--lightgray);
   color: var(--oilBlack);
   padding: 0.5rem;
@@ -196,10 +239,32 @@ body {
 
 .contacts {
   display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  margin: 1rem 0 1rem 0;
+  animation: fadein 1.5s ease-in 0.9s;
+}
+
+.contacts h2 span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  text-decoration: underline;
+  width: 10%;
+  height: 100%;
+  font-size: 3rem;
+  color: var(--techGreen);
+}
+
+.contact-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 0;
-  margin: 2rem 0 2rem 0;
-  animation: fadein 1.5s ease-in 0.9s;
+  width: 70%;
+  height: 100%;
+}
+
+.footer {
+
 }

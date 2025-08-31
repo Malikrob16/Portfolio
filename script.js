@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
       </span>
     </h1>
 
-    <h1 class="typing">Malik Robinson</h1>
+    <h1 class="typing"><span>Malik Robinson</span></h1>
 
     <br>
 
     <h2>
       <span>
-        Software Developer | Front-End Developer | Tech Enthusiast
+        Front-End Developer | Computer Science Graduate | Clean&Responsive Websites
       </span>
     </h2>
     `;
