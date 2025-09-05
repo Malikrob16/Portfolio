@@ -1,17 +1,25 @@
 Things To Fix:
 
+JavaScript --
+-- Complete the JavaScript structure for remaining sections
+
 Header --
 -- Add before and after animations for items
 
 Body --
+-- change containers structure
+-- Move section headers inside containers for cleaner and better flowing scroll
 -- Align each section container
 -- design and implement project display structures
--- add skills section inside education container below
+-- add skills section inside About me container below
 
 Footer --
+-- Remove contact section and place contact information in footer
 
 
 Ideas:
+
+-- Container heights do not need to be 100vh change to flow better
 
 -- Animation for hovering each of the statements below introduction name
 
