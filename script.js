@@ -37,16 +37,26 @@ const htmlStructure = () => {
     `;
 
   aboutMain.innerHTML = `
-    <h2><span>About Me</span></h2>
       <about-info class="about-info">
+        <h2><span>About Me</span></h2>
+
+        <p>My name is Malik Robinson and I am SNHU(Southern New Hampshire University) new grad. I am an aspiring Front-End developer based in Florida. I am actively seeking employment both remote(Any state) and hybrid(in Florida).</p>
+
+        <h3>skills</h3>
+        <skills class="skills">
+        <p class="skill">HTML</p>
+        <p class="skill">CSS</p>
+        <p class="skill">JavaScript</p>
+        <p class="skill">GIT</p>
+        </skills>
 
       </about-info>
   `;
 
   // Education
   educationMain.innerHTML = `
-    <h2><span>Education</span></h2>
       <education-info class="education-info">
+        <h2><span>Education</span></h2>
         <h3>Souther New Hampshire University</h3>
         <p>Graduation date: September 1st 2025</p>
         <p>Degree: Bachelor's in Computer science</p>
@@ -67,8 +77,8 @@ const htmlStructure = () => {
 
   // Projects
   projectsMain.innerHTML = `
-    <h2><span>Projects</span></h2>
       <projects-list class="projects-list">
+        <h2><span>Projects</span></h2>
         <ul>
           <rectangle-pair class="rectangle-pair">
             <li class="rectangle1"><span>Yummy Eats</span></li>
@@ -76,26 +86,10 @@ const htmlStructure = () => {
           </rectangle-pair>
 
           <rectangle-pair class="rectangle-pair">
-            <li class="rectangle2">2</li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
-          </rectangle-pair>
-
-          <rectangle-pair class="rectangle-pair">
-            <li class="rectangle3">3</li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
-          </rectangle-pair>
-
-          <rectangle-pair class="rectangle-pair">
-            <li class="rectangle4"><span>4</span></li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
-          </rectangle-pair>
-
-          <rectangle-pair class="rectangle-pair">
-            <li class="rectangle4"><span>5</span></li>
+            <li class="rectangle2">Portfolio</li>
             <rectangle-background class="rectangle-background"></rectangle-background>
           </rectangle-pair>
         </ul>
-        <skills class="skills">skills</skills>
       </projects-list>
   `;
 
