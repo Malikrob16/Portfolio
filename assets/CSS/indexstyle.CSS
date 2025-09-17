@@ -189,7 +189,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 100vh;
+  height: fit-content;
   margin: 1rem 0 1rem 0;
   transition: all 0.5s ease-in-out;
   animation: fadein 1.5s ease-in 1.1s;
@@ -226,14 +226,10 @@ body {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   background-color: var(--darkgray);
-  color: var(--oilBlack);
+  color: var(--offWhite);
   border: 2px solid var(--techGreen);
   border-radius: var(--brad);
   transition: all 0.5s ease-in-out;
-}
-
-.skill:hover {
-  transform: scale(1.3);
 }
 
 .education {
@@ -241,7 +237,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 100vh;
+  height: fit-content;
   margin: 1rem 0 1rem 0;
   transition: all 0.5s ease-in-out;
   animation: fadein 1.5s ease-in 1.1s;
@@ -265,18 +261,35 @@ body {
   text-align: center;
 }
 
+.education-info .school-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.school-info .specifics {
+  align-content: center;
+  text-align: start;
+}
+
+.school-info .specifics span,
+.education-info .achievements span {
+  color: var(--techGreen);
+  font-weight: bold;
+}
+
 .education-info .badges {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .projects {
   display: flex;
   align-items: center;
   width: 90%;
-  height: 100vh;
+  height: fit-content;
   margin: 1rem 0 1rem 0;
   transition: all 0.5s ease-in-out;
   animation: fadein 1.5s ease-in 0.9s;
