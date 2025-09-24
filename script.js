@@ -67,9 +67,11 @@ const htmlStructure = () => {
           </div>
         <div class="achievements">
           <div class="relevant-classes">
-          <h3><span>Relevant classes</span></h3>
-          <p>Web and Mobile User Experience</p>
-          <p>Web Site Design</p>s
+            <h3><span>Relevant classes</span></h3>
+            <p class="completed-class">Web and Mobile User Experience (IT-355)</p>
+            <p class="completed-class">Mobile Apps Design & Development (IT-390)</p>
+            <p class="completed-class">Web Site Design (IT-270)</p>
+            <p class="completed-class">UI/UX Design and Development (CS-319)</p>
           </div>
           <div class="badges">
             <h3><span>Badges</span></h3>
