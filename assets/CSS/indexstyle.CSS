@@ -213,10 +213,32 @@ body {
   text-align: center;
 }
 
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-info .about-text {
+  width: 50%;
+}
+
+.about-info .about-skills {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--techGreen);
+  margin-left: 0.5rem;
+  gap: 1.5rem;
+}
+
 .about-info .skills {
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -287,7 +309,6 @@ body {
   flex-wrap: wrap;
   margin: 1rem 0 1rem 0;
   border-radius: var(--brad);
-  background-color: var(--lightgray);
   gap: 2rem;
 }
 
@@ -295,6 +316,14 @@ body {
   text-align: center;
   border-radius: var(--brad);
   padding: 1rem;
+  height: fit-content;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  background-color: var(--darkgray);
+  color: var(--offWhite);
+  border: 2px solid var(--techGreen);
+  border-radius: var(--brad);
+  transition: all 0.5s ease-in-out;
 }
 
 .education-info .badges {
@@ -303,7 +332,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   border-radius: var(--brad);
-  background-color: var(--lightgray);
 }
 
 .projects {

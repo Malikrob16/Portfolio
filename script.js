@@ -40,16 +40,23 @@ const htmlStructure = () => {
       <div class="about-info">
         <h2><span>About Me</span></h2>
 
-        <p>My name is Malik Robinson and I am SNHU(Southern New Hampshire University) new grad. I am an aspiring Front-End developer based in Florida. I am actively seeking employment both remote(Any state) and hybrid(in Florida).</p>
+        <div class="about-container">
+          <div class="about-text">
+            <p>
+            I am a SNHU(Southern New Hampshire University) new graduate with my bachelors in computer science. I am an aspiring Front-End developer based in Florida. I am actively seeking employment both remote(Any state) and hybrid(in Florida). I am passionate about building responsive, accessible web experiences with a focus on performance and clean code.
+            </p>
+          </div>
 
-        <h3>skills</h3>
-        <div class="skills">
-        <p class="skill">HTML</p>
-        <p class="skill">CSS</p>
-        <p class="skill">JavaScript</p>
-        <p class="skill">GIT</p>
+          <div class="about-skills">
+            <h3>SKILLS</h3>
+            <div class="skills">
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">JavaScript</p>
+              <p class="skill">GIT</p>
+            </div>
+          </div>
         </div>
-
       </div>
   `;
 
