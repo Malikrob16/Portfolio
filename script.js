@@ -94,17 +94,21 @@ const htmlStructure = () => {
   projectsMain.innerHTML = `
       <div class="projects-list">
         <h2><span>Projects</span></h2>
-        <ul>
-          <div class="rectangle-pair">
-            <li class="rectangle1"><span>Yummy Eats</span></li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
+        <div class="projects">
+          <div class="project">
+            <div class="project-name">
+              <h3>Yummy Eats</h3>
+            </div>
+            <p>test 1</p>
           </div>
 
-          <div class="rectangle-pair">
-            <li class="rectangle2">Portfolio</li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
+          <div class="project">
+            <div class="project-name">
+              <h3>PasteTree</h3>
+            </div>
+            <p>test 2</p>
           </div>
-        </ul>
+        </div>
       </div>
   `;
 
