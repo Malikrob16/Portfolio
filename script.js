@@ -108,6 +108,13 @@ const htmlStructure = () => {
             </div>
             <p>test 2</p>
           </div>
+
+          <div class="project">
+            <div class="project-name">
+              <h3>PasteTree</h3>
+            </div>
+            <p>test 3</p>
+          </div>
         </div>
       </div>
   `;
