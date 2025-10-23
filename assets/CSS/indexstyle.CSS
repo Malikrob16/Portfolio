@@ -146,7 +146,11 @@ body {
 }
 
 .header li a:hover::before,
-.header li a:hover::after {
+.header li a:hover::after,
+.header la a:focus::before,
+.header li a:focus::after,
+.header la a:active::before,
+.header li a:active::after {
   transform: scaleX(1);
 }
 
@@ -375,23 +379,98 @@ body {
 
 .projects-list {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+  padding: 4rem 2rem;
 }
 
 .projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.projects .project {
-  width: 300px;
+.project {
   background: var(--darkgray);
-  border: 1px solid var(--techGreen);
+  color: var(--offWhite);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.tech-stack {
+  margin: 0.8rem 0;
+}
+
+.tech-stack span {
+  background: var(--oilBlack);
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  margin: 0 0.3rem;
+  font-size: 0.85rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.demo-button {
+  background: var(--oilBlack);
+  color: var(--offWhite);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.demo-button:hover,
+.demo-button:focus {
+  background: var(--techGreen);
+  color: var(--oilBlack);
+}
+
+.demo-button:active {
+  transform: scale(0.5);
+  background: var(--offWhite);
+  color: var(--oilBlack);
+}
+
+.github-button {
+  background: var(--oilBlack);
+  color: var(--offWhite);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.github-button:hover,
+.github-button:focus {
+  background: var(--techGreen);
+  color: var(--oilBlack);
+}
+
+.github-button:active {
+  transform: scale(0.5);
+  background: var(--offWhite);
+  color: var(--oilBlack);
 }
 
 .footer {

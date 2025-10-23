@@ -27,3 +27,5 @@ Ideas:
 -- Animation for hovering each of the statements below introduction name
 
 -- Have a way for visitor to email me directly from portfolio page (Get inspiration from Angela J. Holden)
+
+-- Put a enlarge project image button on top of each project screen shot so visitors can see the screenshot clearer.

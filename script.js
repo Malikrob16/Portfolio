@@ -1,3 +1,21 @@
+function EnlargeProjectImage() {
+  const projectImage = document.getElementById('project-img');
+
+  projectImage.addEventListener('click', () => {
+    console.log("Image clicked changing size now!");
+    projectImage.style.width = '500px';
+    projectImage.style.height = '500px';
+  });
+
+  if (projectImage.style.width === '500px' && projectImage.style.height === '500px') {
+    projectImage.addEventListener('click', () => {
+      console.log("Enlarged image clicked changing size back to normal now!");
+      projectImage.style.width = '100%';
+      projectImage.style.height = '100%';
+    });
+  }
+}
+
 const htmlStructure = () => {
   const headerNav = document.getElementById('header-nav');
   const headerMain = document.getElementById('header-main');
@@ -95,25 +113,49 @@ const htmlStructure = () => {
       <div class="projects-list">
         <h2><span>Projects</span></h2>
         <div class="projects">
+
           <div class="project">
-            <div class="project-name">
+              <img src="./assets/images/Yummy-Eats-Preview.jpg" alt="Screenshot of Yummy Eats project" class="project-img" id="project-img">
+            <div class="project-content">
               <h3>Yummy Eats</h3>
+              <p>A responsive restaurant discovery app built with HTML, CSS, and JavaScript. Users can search restaurants by category and explore menus with a clean, interactive UI.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-            <p>test 1</p>
+            <div class="project-links">
+                <a href="https://malikrob16.github.io/Yummy-Eats" target="_blank" class="demo-button">Live Demo</a>
+                <a href="https://github.com/MalikRob16/Yummy-Eats" target="_blank" class="github-button">GitHub</a>
+              </div>
+            </div>
           </div>
 
           <div class="project">
-            <div class="project-name">
+            <img src="./assets/images/PasteTree-Preview.jpg" alt="Screenshot of PasteTree project" class="project-img" id="project-img">
+            <div class="project-content">
               <h3>PasteTree</h3>
+              <p>A lightweight paste-sharing app that lets users create and share text snippets instantly. Designed for simplicity and fast performance using front-end web technologies.</p>
+              <div class="tech-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://malikrob16.github.io/PasteTree" target="_blank" class="demo-button">Live Demo</a>
+                <a href="https://github.com/MalikRob16/PasteTree" target="_blank" class="github-button">GitHub</a>
+              </div>
             </div>
-            <p>test 2</p>
           </div>
 
           <div class="project">
-            <div class="project-name">
-              <h3>PasteTree</h3>
+            <img src="./assets/images/FriendsOnDemand-Preview.jpg" alt="Screenshot of Friends On Demand project" class="project-img" id="project-img">
+            <div class="project-content">
+            <h3>Friends On Demand</h3>
+            <p>A current work in progress. FriendsOnDemand will be a website for those who have no friends to watch videos with. It is a Mystery Science Theater 3000 inspired project that will have random characters watching videos with you and will also use a provided chat box to talk to you as well as you chat with them.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-            <p>test 3</p>
+            <div class="project-links">
+              <a href="https://malikrob16.github.io/FriendsOnDemand" target="_blank" class="demo-button">Live Demo</a>
+              <a href="https://github.com/Malikrob16/FriendsOnDemand" target="_blank" class="github-button">GitHub</a>
+            </div>
           </div>
         </div>
       </div>
@@ -147,4 +189,5 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM content loaded");
 
   htmlStructure();
+  EnlargeProjectImage();
 });
