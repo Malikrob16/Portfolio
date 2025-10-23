@@ -1,3 +1,21 @@
+function EnlargeProjectImage() {
+  const projectImage = document.getElementById('project-img');
+
+  projectImage.addEventListener('click', () => {
+    console.log("Image clicked changing size now!");
+    projectImage.style.width = '500px';
+    projectImage.style.height = '500px';
+  });
+
+  if (projectImage.style.width === '500px' && projectImage.style.height === '500px') {
+    projectImage.addEventListener('click', () => {
+      console.log("Enlarged image clicked changing size back to normal now!");
+      projectImage.style.width = '100%';
+      projectImage.style.height = '100%';
+    });
+  }
+}
+
 const htmlStructure = () => {
   const headerNav = document.getElementById('header-nav');
   const headerMain = document.getElementById('header-main');
@@ -37,71 +55,121 @@ const htmlStructure = () => {
     `;
 
   aboutMain.innerHTML = `
-      <about-info class="about-info">
+      <div class="about-info">
         <h2><span>About Me</span></h2>
 
-        <p>My name is Malik Robinson and I am SNHU(Southern New Hampshire University) new grad. I am an aspiring Front-End developer based in Florida. I am actively seeking employment both remote(Any state) and hybrid(in Florida).</p>
+        <div class="about-container">
+          <div class="about-text">
+            <p>
+            I am a SNHU(Southern New Hampshire University) new graduate with my bachelors in computer science. I am an aspiring Front-End developer based in Florida. I am actively seeking employment both remote(Any state) and hybrid(in Florida). I am passionate about building responsive, accessible web experiences with a focus on performance and clean code.
+            </p>
+          </div>
 
-        <h3>skills</h3>
-        <skills class="skills">
-        <p class="skill">HTML</p>
-        <p class="skill">CSS</p>
-        <p class="skill">JavaScript</p>
-        <p class="skill">GIT</p>
-        </skills>
-
-      </about-info>
+          <div class="about-skills">
+            <h3>SKILLS</h3>
+            <div class="skills">
+              <p class="skill">HTML</p>
+              <p class="skill">CSS</p>
+              <p class="skill">JavaScript</p>
+              <p class="skill">GIT</p>
+            </div>
+          </div>
+        </div>
+      </div>
   `;
 
   // Education
   educationMain.innerHTML = `
-      <education-info class="education-info">
+      <div class="education-info">
         <h2><span>Education</span></h2>
-        <h3>Souther New Hampshire University</h3>
-        <p>Graduation date: September 1st 2025</p>
-        <p>Degree: Bachelor's in Computer science</p>
-        <p>GPA: 3.7</p>
-        <focuses class="focuses">
-          <h3>Focuses</h3>
-          <p>Web and Mobile User Experience</p>
-          <p>Web Site Design</p>
-        </focuses>
-        <badges class="badges">
-          <h3>Badges</h3>
-          <img src="assets/images/Honor-roll-badges-nobg.png" width="150px" height="150px">
+          <div class="school-info">
+            <img src="./assets/images/snhu_nobg-logo.png" width="350px" height="350px">
+            <div class="specifics">
+              <p><span>Graduation date: </span> September 1st 2025</p>
+              <p><span>Degree: </span> Bachelor's in Computer science</p>
+              <p><span>GPA: </span> 3.7</p>
+            </div>
+          </div>
+        <div class="achievements">
+          <div class="relevant-classes">
+            <h3><span>Relevant classes</span></h3>
+            <p class="completed-class">Web and Mobile User Experience (IT-355)</p>
+            <p class="completed-class">Mobile Apps Design & Development (IT-390)</p>
+            <p class="completed-class">Web Site Design (IT-270)</p>
+            <p class="completed-class">UI/UX Design and Development (CS-319)</p>
+          </div>
+          <div class="badges">
+            <h3><span>Badges</span></h3>
+            <img src="./assets/images/Honor-roll-badges-nobg.png" width="150px" height="150px">
 
-          <img src="assets/images/President'-Dean's-badges-nobg.png" width="325px" height="325px">
-        </badges>
-      </education-info>
+            <img src="./assets/images/President'-Dean's-badges-nobg.png" width="325px" height="325px">
+          </div>
+        </div>
+      </div>
   `;
 
   // Projects
   projectsMain.innerHTML = `
-      <projects-list class="projects-list">
+      <div class="projects-list">
         <h2><span>Projects</span></h2>
-        <ul>
-          <rectangle-pair class="rectangle-pair">
-            <li class="rectangle1"><span>Yummy Eats</span></li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
-          </rectangle-pair>
+        <div class="projects">
 
-          <rectangle-pair class="rectangle-pair">
-            <li class="rectangle2">Portfolio</li>
-            <rectangle-background class="rectangle-background"></rectangle-background>
-          </rectangle-pair>
-        </ul>
-      </projects-list>
+          <div class="project">
+              <img src="./assets/images/Yummy-Eats-Preview.jpg" alt="Screenshot of Yummy Eats project" class="project-img" id="project-img">
+            <div class="project-content">
+              <h3>Yummy Eats</h3>
+              <p>A responsive restaurant discovery app built with HTML, CSS, and JavaScript. Users can search restaurants by category and explore menus with a clean, interactive UI.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://malikrob16.github.io/Yummy-Eats" target="_blank" class="demo-button">Live Demo</a>
+                <a href="https://github.com/MalikRob16/Yummy-Eats" target="_blank" class="github-button">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./assets/images/PasteTree-Preview.jpg" alt="Screenshot of PasteTree project" class="project-img" id="project-img">
+            <div class="project-content">
+              <h3>PasteTree</h3>
+              <p>A lightweight paste-sharing app that lets users create and share text snippets instantly. Designed for simplicity and fast performance using front-end web technologies.</p>
+              <div class="tech-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://malikrob16.github.io/PasteTree" target="_blank" class="demo-button">Live Demo</a>
+                <a href="https://github.com/MalikRob16/PasteTree" target="_blank" class="github-button">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./assets/images/FriendsOnDemand-Preview.jpg" alt="Screenshot of Friends On Demand project" class="project-img" id="project-img">
+            <div class="project-content">
+            <h3>Friends On Demand</h3>
+            <p>A current work in progress. FriendsOnDemand will be a website for those who have no friends to watch videos with. It is a Mystery Science Theater 3000 inspired project that will have random characters watching videos with you and will also use a provided chat box to talk to you as well as you chat with them.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://malikrob16.github.io/FriendsOnDemand" target="_blank" class="demo-button">Live Demo</a>
+              <a href="https://github.com/Malikrob16/FriendsOnDemand" target="_blank" class="github-button">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
   `;
 
   // Footer
   footerMain.innerHTML = `
-    <footer-summary class="footer-summary">
+    <div class="footer-summary">
     <h3>Malik Robinson</h3>
     <h4>Location: Poinciana, Florida</h4>
-    <p>Aspiring Front-End developer | Actively seeking remote internships/work (Any State) | Activly seeking hybrid work in Florida</p>
-    </footer-summary>
+    <p>Aspiring Front-End developer | Actively seeking remote internships/work (Any State) | Actively seeking hybrid work in Florida</p>
+    </div>
 
-    <contact-container class="contact-container">
+    <div class="contact-container">
           <a href="mailto:malik16.mr@gmail.com" target="_blank"><svg fill="#fff" width="50px" height="50px" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>email-solid</title>
           <path class="clr-i-solid clr-i-solid-path-1" d="M32.33,6a2,2,0,0,0-.41,0h-28a2,2,0,0,0-.53.08L17.84,20.47Z"></path><path class="clr-i-solid clr-i-solid-path-2" d="M33.81,7.39,19.25,21.89a2,2,0,0,1-2.82,0L2,7.5a2,2,0,0,0-.07.5V28a2,2,0,0,0,2,2h28a2,2,0,0,0,2-2V8A2,2,0,0,0,33.81,7.39ZM5.3,28H3.91V26.57l7.27-7.21,1.41,1.41Zm26.61,0H30.51l-7.29-7.23,1.41-1.41,7.27,7.21Z"></path>
@@ -113,7 +181,7 @@ const htmlStructure = () => {
 
           <a href="https://linkedin.com/in/robinson-malik" target="_blank"><svg fill="#fff" width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
           </a>
-    </contact-container>
+    </div>
   `;
 }
 
@@ -121,4 +189,5 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM content loaded");
 
   htmlStructure();
+  EnlargeProjectImage();
 });
