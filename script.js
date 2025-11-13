@@ -133,12 +133,12 @@ const htmlStructure = () => {
             <img src="./assets/images/PasteTree-Preview.jpg" alt="Screenshot of PasteTree project" class="project-img" id="project-img">
             <div class="project-content">
               <h3>PasteTree</h3>
-              <p>A lightweight paste-sharing app that lets users create and share text snippets instantly. Designed for simplicity and fast performance using front-end web technologies.</p>
+              <p>A lightweight paste-sharing app that lets users create and share text snippets instantly. Designed for simplicity and fast performance using front-end web technologies. The domain name paste-tree.com was purchased and DNS was configured a long with https certs to ensure secure deployment.</p>
               <div class="tech-stack">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span>
               </div>
               <div class="project-links">
-                <a href="https://malikrob16.github.io/PasteTree" target="_blank" class="demo-button">Live Demo</a>
+                <a href="https://paste-tree.com" target="_blank" class="demo-button">Deployed site</a>
                 <a href="https://github.com/MalikRob16/PasteTree" target="_blank" class="github-button">GitHub</a>
               </div>
             </div>
