@@ -257,16 +257,15 @@ body {
 }
 
 .about-info .skills {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 0.5rem;
 }
 
 .skills .skill {
   width: 150px;
   height: fit-content;
+  padding: 0.2rem;
   font-size: 1rem;
   letter-spacing: 0.3rem;
   background-color: var(--darkgray);
@@ -311,6 +310,11 @@ body {
   width: 100%;
   height: fit-content;
 }
+
+.education .school-logo {
+    width: 30rem;
+    height: 15rem;
+  }
 
 .school-info .specifics {
   align-content: center;
@@ -613,7 +617,7 @@ body {
 }
 
 /* ===== Mobile phones (max-width: 480px) ===== */
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   body {
     font-size: 90%;
   }
@@ -636,6 +640,11 @@ body {
   .education h2 span,
   .projects h2 span {
     font-size: 1.5rem;
+  }
+
+  .education .school-logo {
+    width: 12rem;
+    height: 7rem;
   }
 
   .skills .skill {
