@@ -31,3 +31,5 @@ Ideas:
 -- Put a enlarge project image button on top of each project screen shot so visitors can see the screenshot clearer.
 
 -- Fix header introduction display size on mobile view
+
+-- Add alt text to all images

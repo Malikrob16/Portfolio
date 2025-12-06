@@ -72,6 +72,9 @@ const htmlStructure = () => {
               <p class="skill">CSS</p>
               <p class="skill">JavaScript</p>
               <p class="skill">GIT</p>
+              <p class="skill">GITHUB</p>
+              <p class="skill">REACT</p>
+              <p class="skill">NODE</p>
             </div>
           </div>
         </div>
@@ -83,7 +86,7 @@ const htmlStructure = () => {
       <div class="education-info">
         <h2><span>Education</span></h2>
           <div class="school-info">
-            <img src="./assets/images/snhu_nobg-logo.png" width="350px" height="350px">
+            <img class="school-logo" src="./assets/images/snhu_nobg-logo.png" alt="SNHU logo">
             <div class="specifics">
               <p><span>Graduation date: </span> September 1st 2025</p>
               <p><span>Degree: </span> Bachelor's in Computer science</p>
@@ -114,6 +117,7 @@ const htmlStructure = () => {
         <h2><span>Projects</span></h2>
         <div class="projects">
 
+        
           <div class="project">
               <img src="./assets/images/Yummy-Eats-Preview.jpg" alt="Screenshot of Yummy Eats project" class="project-img" id="project-img">
             <div class="project-content">
@@ -145,7 +149,7 @@ const htmlStructure = () => {
           </div>
 
           <div class="project">
-            <img src="./assets/images/FriendsOnDemand-Preview.jpg" alt="Screenshot of Friends On Demand project" class="project-img" id="project-img">
+            <img src="./assets/images/Work-in-progress.jpg" alt="Screenshot of Friends On Demand project" class="project-img" id="project-img">
             <div class="project-content">
             <h3>Friends On Demand</h3>
             <p>A current work in progress. FriendsOnDemand will be a website for those who have no friends to watch videos with. It is a Mystery Science Theater 3000 inspired project that will have random characters watching videos with you and will also use a provided chat box to talk to you as well as you chat with them.</p>
@@ -158,6 +162,21 @@ const htmlStructure = () => {
             </div>
           </div>
         </div>
+
+        <div class="project">
+            <img src="./assets/images/News-page-Preview.jpg" alt="Screenshot of PasteTree project" class="project-img" id="project-img">
+            <div class="project-content">
+              <h3>News Page Clone</h3>
+              <p>News Page Clone is a Frontend Mentor Junior level challenge. This is my first React based project. This challenge focus on frontend development skills like positioning, responsiveness, and base level javascript additions. The site features a clean, user-friendly interface with both desktop and mobile responsiveness, and a visually appealing layout.</p>
+              <div class="tech-stack">
+                <span>React</span><span>CSS</span><span>JSX</span><span>Node</span>
+              </div>
+              <div class="project-links">
+                <a href="https://malikrob16.github.io/News-Page-Clone/" target="_blank" class="demo-button">Live Demo</a>
+                <a href="https://github.com/Malikrob16/News-Page-Clone" target="_blank" class="github-button">GitHub</a>
+              </div>
+            </div>
+          </div>
       </div>
   `;
 
